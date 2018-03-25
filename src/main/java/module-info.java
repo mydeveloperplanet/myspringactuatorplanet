@@ -6,4 +6,5 @@ module com.mydeveloperplanet.myspringactuatorplanet {
     requires spring.context;
     requires spring.boot.actuator.autoconfigure;
     requires spring.security.core;
+    requires spring.boot.actuator;
 }
