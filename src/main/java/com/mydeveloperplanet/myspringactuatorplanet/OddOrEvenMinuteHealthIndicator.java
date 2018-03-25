@@ -18,9 +18,9 @@ public class OddOrEvenMinuteHealthIndicator implements HealthIndicator {
         }
 
         if (errorCode != 0) {
-            return Health.down().withDetail("Error Code", errorCode).build();
+            return Health.status("ODD").withDetail("Error Code", errorCode).build();
         }
-        return Health.up().build();
+        return Health.status("EVEN").build();
     }
 
 }
